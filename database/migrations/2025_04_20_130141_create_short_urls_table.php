@@ -19,6 +19,7 @@ return new class extends Migration {
             $table->unsignedBigInteger('access_count')->default(0);
             $table->timestamps();
         });
+        
     }
 
 
