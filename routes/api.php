@@ -14,7 +14,7 @@ use App\Http\Controllers\ShortUrlController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
+ 
 Route::post('/shorten', [ShortUrlController::class, 'store']);
 Route::get('/shorten/{shortCode}', [ShortUrlController::class, 'show']);
 Route::put('/shorten/{shortCode}', [ShortUrlController::class, 'update']);
