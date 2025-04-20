@@ -10,6 +10,7 @@ class ShortUrlController extends Controller
 {
     public function store(Request $request)
     {
+        
         $request->validate(['url' => 'required|url']);
         $shortCode = Str::random(6);
 
