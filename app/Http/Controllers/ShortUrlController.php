@@ -37,11 +37,10 @@ class ShortUrlController extends Controller
 
     public function update(Request $request, $shortCode)
     {
-        
+
         $request->validate(['url' => 'required|url']);
         $shortUrl = ShortUrl::where('short_code', $shortCode)->first();
         if (!$shortUrl) return response()->json(['message' => 'Not Found'], 404);
-
         $shortUrl->update(['url' => $request->url]);
 
         return response()->json($shortUrl);
