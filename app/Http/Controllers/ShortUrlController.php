@@ -9,6 +9,7 @@ use Illuminate\Support\Str;
 class ShortUrlController extends Controller
 {
     #logic
+    
     public function store(Request $request)
     {
 
