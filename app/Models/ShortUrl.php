@@ -10,3 +10,4 @@ class ShortUrl extends Model
     protected $fillable = ['url', 'short_code', 'access_count'];
     use HasFactory;
 }
+
